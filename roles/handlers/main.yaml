@@ -1,0 +1,7 @@
+
+  
+- name: reiniciar servidor
+  reboot:
+
+- name: reiniciar servicio-dhcp
+  service: name=isc-dhcp-server state=restarted
