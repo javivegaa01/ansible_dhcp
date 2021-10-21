@@ -3,5 +3,5 @@
 - name: reiniciar servidor
   reboot:
 
-- name: reiniciar servicio-dhcp
+- name: reiniciar dhcp
   service: name=isc-dhcp-server state=restarted

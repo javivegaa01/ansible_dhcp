@@ -11,13 +11,7 @@
     group: root
     mode: '0644'
   notify:
-    - reiniciar maquina
-
-- name: "Añadir clave pública ssh"
-  authorized_key:
-    user: user-server
-    state: present
-    key: "{{ lookup('file', '~/.ssh/id_rsa.pub') }}"
+    - reiniciar servidor
 
 - name: "Bit de forwarding"
   sysctl:
